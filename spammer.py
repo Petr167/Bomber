@@ -33,20 +33,24 @@ print('Installing...')
 sleep(3)
 print("\n" * 100)
 def dev():
-    mode = int(input("""
+    mode = int()
+    print("""
 Введите режим работы:
 [1] - Термукс
 [2] - Виндовс
 [3] - Линукс
-    """))
+    """)
+    mode = input()
     if mode == 1:
         def menu():
-            mod = int(input("""
+            mod = int()
+            print("""
 Введите режим работы:
 [1] - Спамер
 [2] - Обновить
 [3] - Выход
-            """))
+            """)
+            menu = input()
             if mod == 1:
                 print('f')
             if mod == 2:
